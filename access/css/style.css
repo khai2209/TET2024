@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../bg/background-tet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 1170px;
+    margin: 0 auto;
+}
+
+.mt-1r {
+    margin-top: 1rem;
+}
+
+.text-color {
+    color: yellow;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#audio {
+    display: none;   
+}
+
+.btn-off {
+    display: flex;
+    float: right;
+    height: 30px;
+    width: 180px;
+    border-radius: 18px;
+    border: 3px dashed pink;
+    padding: 18px 16px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../bg/bg-luck-money.jpg);
+    background-position: center;
+}
+
+.input-custom {
+    background-image: url(../bg/bg-luck-money.jpg);
+    background-position: center;
+    border: 3px dashed pink;
+    padding: 8px;
+    border-radius: 16px;
+}
