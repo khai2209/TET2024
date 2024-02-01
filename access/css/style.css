@@ -50,3 +50,6 @@ body {
     padding: 8px;
     border-radius: 16px;
 }
+option {
+    background-color: black;
+}
