@@ -24,12 +24,16 @@ body {
     font-size: 18px;
     font-weight: 700;
 }
+.position-r {
+    position: relative;
+}
 
 #audio {
     display: none;   
 }
 
 .btn-off {
+    z-index: 1;
     display: flex;
     float: right;
     height: 30px;
@@ -41,6 +45,7 @@ body {
     align-items: center;
     background-image: url(../bg/bg-luck-money.jpg);
     background-position: center;
+    animation: cloud 2s infinite ease-in-out;
 }
 
 .input-custom {
@@ -49,7 +54,34 @@ body {
     border: 3px dashed pink;
     padding: 8px;
     border-radius: 16px;
+    animation: cloud 2s infinite ease-in-out;
 }
 option {
-    background-color: black;
+    background-color: rgb(225, 72, 72);
+    border-radius: 8px;
+}
+.cloud-right {
+    z-index: 2;
+    position: absolute;
+    right: 274px;
+    top: 44px;
+    height: 71px;
+    animation: cloud 2s infinite ease-in-out;
+}
+.cloud-left {
+    z-index: 2;
+    position: absolute;
+    left: 400px;
+    top: 40px;
+    height: 85px;
+    animation: cloud 2s infinite ease-in-out;
+}
+
+/* animation */
+@keyframes cloud {
+    0%, 100% {
+        transform: translateY(0);
+    }50% {
+        transform: translateY(3px);
+    }
 }
